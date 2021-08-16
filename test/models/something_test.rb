@@ -6,7 +6,6 @@ class DocumentTest < ActiveSupport::TestCase
   end
 
   test 'failing test' do
-    skip
     assert false
   end
 end
