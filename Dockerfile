@@ -1,7 +1,6 @@
 FROM ruby:3.0.1-alpine
 
-RUN apk add --update --no-cache bash build-base tzdata sqlite-dev
-
+RUN apk add --update --no-cache bash build-base tzdata postgresql-dev
 WORKDIR /app
 
 COPY Gemfile /app/
