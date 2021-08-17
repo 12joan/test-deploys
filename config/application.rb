@@ -34,5 +34,7 @@ module TestDeploys
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.middleware.insert_before 0, Rack::AuthorisedProxy
   end
 end
